@@ -1,4 +1,39 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black;
+    font-family: arial;
+    color: white;
+}
+
+.container {
+    background-color: white;
+    color: black;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 25px;
+    padding: 30px 20px;
+}
+
+.app-heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    font-size: 3.5em;
+}
+
+.form{
+    width: 80%;
+    margin: 10px auto 20px auto;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: 40% auto;
+    max-width: 40%;
+}
+
+.result-container {
+    margin: 10px 0;
+}
 
 

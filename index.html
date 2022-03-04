@@ -1,16 +1,54 @@
 <html>
     <head>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Web App - Simple Interest Calculator</title>
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div class="container">
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            <h1 class="app-heading">Simple Interest Calculator</h1>
+    
+            <form class="form" id="form">
+                <div class="input-container">
+                    <label for="principal">Amount </label>
+                    <input type="number"  id="principal" name="principal" required> 
+                </div>
+                <br/>
+                <div class="input-container">
+                    <label for="rate">Rate </label>
+                    <div class="rate-container">
+                        <input id="rate" name="rate" type="range" value="10.25" min="1" max="20" step="0.25" required> 
+                        <span><output id="rateVal">10.25</output>%</span>
+                    </div>
+                </div>
+                <br>
+                <div class="input-container">
 
-        <button onclick="compute()">Compute</button>
+                    <label for="years">
+                        No. of Years 
+                    </label>
+                    <select name="years" id="years" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <br>
+                <button>Compute Interest</button>
+                <div class="result-container" id="resultContainer">
+                </div>
+            </form>
+            <footer>
+                &#169; Everyone can get rich. <br> NB: This Calculator belongs to Tunedev(Sanusi Babatunde)
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
